@@ -3,7 +3,6 @@ import warnings
 from icalendar import Calendar, Event
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
-from pathlib import Path
 
 # Create calendar
 ical = Calendar()

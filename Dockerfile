@@ -1,4 +1,6 @@
-FROM python:3.9
-ADD main.py .
-RUN pip install requests beautifulsoup4 icalendar
+FROM python:3
+ADD requirements.txt /
+RUN pip install -r requirements.txt
+ADD main.py /
+EXPOSE 80/tcp
 CMD ["python", "./main.py"] 
